@@ -134,7 +134,7 @@ def create_interface():
     Creates a Gradio interface for the voice-to-voice translation app.
     """
     audio_input = gr.Audio(
-        type="filepath",
+        type="filepath",  # Removed the `source` argument, keeping `type` as `filepath`
         label="Record or Upload Audio"
     )
 
@@ -161,17 +161,16 @@ def create_interface():
     title = "LinguaSpeak: Record English and Hear Popular Translations"
     description = "Translates spoken English into 6 popular languages: Spanish, Turkish, Japanese, French, German, and Chinese."
 
-    # Gradio layout with translations beneath the input
-    with gr.Blocks() as demo:
-        gr.Markdown(f"# {title}")
-        gr.Markdown(description)
-
-        with gr.Column():
-            # Audio input (upload or record)
-            audio_input.render()
-
-            # Translations beneath
-            gr.Row(output_pairs)
+    # Gradio layout
+    demo = gr.Interface(
+        fn=translate_and_play,
+        inputs=audio_input,
+        outputs=output_pairs,  # Now interleaved audio and text outputs
+        title=title,
+        description=description,
+        allow_flagging="never",
+        live=True
+    )
 
     return demo
 
