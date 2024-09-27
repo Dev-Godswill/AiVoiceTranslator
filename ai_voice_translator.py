@@ -138,12 +138,11 @@ def create_interface():
         label="Record or Upload Audio"
     )
 
-    # Create a list to interleave audio and text outputs for each language
-    output_pairs = []
-    
+    # Now alternate audio outputs and their respective text outputs
+    outputs = []
     for lang in SUPPORTED_LANGUAGES:
-        output_pairs.append(gr.Audio(label=f"{lang} Translation Audio"))  # Audio output
-        output_pairs.append(gr.Textbox(label=f"{lang} Translation Text", interactive=False))  # Text output
+        outputs.append(gr.Audio(label=f"{lang} Translation Audio"))
+        outputs.append(gr.Textbox(label=f"{lang} Translation Text", interactive=False))
 
     def translate_and_play(audio_file):
         """
@@ -151,11 +150,13 @@ def create_interface():
         """
         translated_audio_paths, translated_texts = voice_to_voice(audio_file)
 
-        # Return audio and text in pairs
-        audio_outputs = [translated_audio_paths[lang] for lang in SUPPORTED_LANGUAGES]
-        text_outputs = [translated_texts[lang] for lang in SUPPORTED_LANGUAGES]
+        # Flatten the list of outputs (alternate audio and text)
+        output_values = []
+        for lang in SUPPORTED_LANGUAGES:
+            output_values.append(translated_audio_paths[lang])
+            output_values.append(translated_texts[lang])
 
-        return (*audio_outputs, *text_outputs)
+        return output_values
 
     # App Heading
     title = "LinguaSpeak: Record English and Hear Popular Translations"
@@ -165,7 +166,7 @@ def create_interface():
     demo = gr.Interface(
         fn=translate_and_play,
         inputs=audio_input,
-        outputs=output_pairs,  # Now interleaved audio and text outputs
+        outputs=outputs,
         title=title,
         description=description,
         allow_flagging="never",
