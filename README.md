@@ -1,7 +1,6 @@
 # <a name="ai-voicetranslator"></a> LinguaSpeak: Real-time Voice-to-Voice Translation in 6 Popular Languages
 
 ## Table of Contents
-- [HR Dashboard](#hr-dashboard)
 - [Detailed Breakdown of the Code](#detailed-breakdown) 
 - [How to Use](#how-to-use)
 - [Prerequisites](#prerequisites)
@@ -26,6 +25,11 @@ Here’s a breakdown of the major segments in the code:
 **a. Importing Libraries**
 
 <img width="722" alt="HR Analytics Excel Dashboard" src="https://github.com/Dev-Godswill/picture-files/blob/7699cd81615efc1e8d15a2cb6ba371f0dd2a6e2c/1.png">
+
+* Gradio creates the interface, allowing users to upload audio.
+* AssemblyAI handles the transcription of audio to text.
+* Translator translates English text into different languages.
+* ElevenLabs converts the translated text back into speech using various voices.
 
 **Features:**
 1. **Real-time Date/Time:** The dashboard displays the current date and time, ensuring that the information is always up to date. 
