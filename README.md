@@ -14,8 +14,6 @@
 ## <a name="detailed-breakdown"></a> Detailed Breakdown of the Code
 The purpose of this Python script is to create an application that translates spoken English into six popular languages (Spanish, Turkish, Japanese, French, German, and Chinese) and plays back the translated text as speech. The program uses Gradio for creating the user interface, AssemblyAI for speech-to-text transcription, and ElevenLabs for text-to-speech generation.
 
-<img width="722" alt="HR Analytics Excel Dashboard" src="https://github.com/Dev-Godswill/picture-files/blob/7699cd81615efc1e8d15a2cb6ba371f0dd2a6e2c/1.png">
-
 **Skills Acquired:**
 1. API integration (AssemblyAI, ElevenLabs)
 2. File handling and text processing
@@ -24,6 +22,10 @@ The purpose of this Python script is to create an application that translates sp
 5. Text translation via the translate library
 
 Here’s a breakdown of the major segments in the code:
+
+**a. Importing Libraries**
+
+<img width="722" alt="HR Analytics Excel Dashboard" src="https://github.com/Dev-Godswill/picture-files/blob/7699cd81615efc1e8d15a2cb6ba371f0dd2a6e2c/1.png">
 
 **Features:**
 1. **Real-time Date/Time:** The dashboard displays the current date and time, ensuring that the information is always up to date. 
