@@ -1,4 +1,4 @@
-<a name="ai-voicetranslator"></a> LinguaSpeak: Real-time Voice-to-Voice Translation in 6 Popular Languages
+# <a name="ai-voicetranslator"></a> LinguaSpeak: Real-time Voice-to-Voice Translation in 6 Popular Languages
 
 ## Table of Contents
 - [Detailed Breakdown of the Code](#detailed-breakdown) 
