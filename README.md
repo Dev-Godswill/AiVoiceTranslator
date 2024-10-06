@@ -1,13 +1,9 @@
-![image](https://github.com/user-attachments/assets/c6a49650-b2a3-4df7-a036-72b0af8d82db)# <a name="ai-voicetranslator"></a> LinguaSpeak: Real-time Voice-to-Voice Translation in 6 Popular Languages
+<a name="ai-voicetranslator"></a> LinguaSpeak: Real-time Voice-to-Voice Translation in 6 Popular Languages
 
 ## Table of Contents
 - [Detailed Breakdown of the Code](#detailed-breakdown) 
 - [Technologies Used](#technologies-used)
 - [How To Run the Code](#how-to-run-the-code)
-- [Wireframe](#wireframe)
-- [Screenshots](#screenshots)
-- [Dataset](#dataset)
-- [Usage](#usage)
 - [Contributing](#contributing)
 
 ## <a name="detailed-breakdown"></a> Detailed Breakdown of the Code
