@@ -88,7 +88,7 @@ First, create a virtual environment and install the required packages by running
 2. **Add API Keys:**
 * Replace ASSEMBLY_AI_API_KEY = "[]" with your actual AssemblyAI API key.
 * Replace ELEVEN_LABS_API_KEY = "[]" with your ElevenLabs API key.
-* For ElevenLabs, also provide a valid voice_id in the text_to_speech function.
+* For ElevenLabs, also provide a valid voice_id in the text_to_speech function. [SignUp on ElevenLabs](https://tinyurl.com/elevenlabs24)
 
 3. **Run the Script:**
 Launch the application using:
@@ -97,7 +97,7 @@ Launch the application using:
 
 ## Wireframe
 ![HR Analytics Wireframe](https://github.com/Dev-Godswill/HR-Analytics-Dashboard/assets/99620725/91b4faf1-aef3-4ae4-b1ca-1c3124846b7d)
-[Wireframe Link](https://excalidraw.com/#json=B8vH0U3qIr6CYTxXPqFYs,U77Qt4PPl_tKWaaEavTayg)
+
 
 ## Screenshots
 ![ezgif com-video-to-gif](https://github.com/Dev-Godswill/HR-Analytics-Dashboard/assets/99620725/203fb66f-2322-4af1-99df-e3e54b6d3f10)
