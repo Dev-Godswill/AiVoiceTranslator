@@ -95,13 +95,6 @@ Launch the application using:
 
 <img width="722" alt="AI Voice Translator" src="https://github.com/Dev-Godswill/picture-files/blob/main/10.png?raw=true">
 
-## Wireframe
-![HR Analytics Wireframe](https://github.com/Dev-Godswill/HR-Analytics-Dashboard/assets/99620725/91b4faf1-aef3-4ae4-b1ca-1c3124846b7d)
-
-
-## Screenshots
-![ezgif com-video-to-gif](https://github.com/Dev-Godswill/HR-Analytics-Dashboard/assets/99620725/203fb66f-2322-4af1-99df-e3e54b6d3f10)
-
 ## Contributing
 Contributions to this project is welcome! If you'd like to contribute, please follow these steps:
 - Fork the project repository. 
