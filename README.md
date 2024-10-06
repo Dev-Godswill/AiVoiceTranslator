@@ -14,22 +14,28 @@
 The purpose of this Python script is to create an application that translates spoken English into six popular languages (Spanish, Turkish, Japanese, French, German, and Chinese) and plays back the translated text as speech. The program uses Gradio for creating the user interface, AssemblyAI for speech-to-text transcription, and ElevenLabs for text-to-speech generation.
 
 **Skills Acquired:**
-1. API integration (AssemblyAI, ElevenLabs)
-2. File handling and text processing
-3. Real-time user interface creation using Gradio
-4. Error handling and exception management
-5. Text translation via the translate library
+* API integration (AssemblyAI, ElevenLabs)
+* File handling and text processing
+* Real-time user interface creation using Gradio
+* Error handling and exception management
+* Text translation via the translate library
 
 Here’s a breakdown of the major segments in the code:
 
 **a. Importing Libraries**
 
-<img width="722" alt="HR Analytics Excel Dashboard" src="https://github.com/Dev-Godswill/picture-files/blob/7699cd81615efc1e8d15a2cb6ba371f0dd2a6e2c/1.png">
+<img width="722" alt="AI Voice Translator" src="https://github.com/Dev-Godswill/picture-files/blob/7699cd81615efc1e8d15a2cb6ba371f0dd2a6e2c/1.png">
 
 * Gradio creates the interface, allowing users to upload audio.
 * AssemblyAI handles the transcription of audio to text.
 * Translator translates English text into different languages.
 * ElevenLabs converts the translated text back into speech using various voices.
+
+**b. Global Configuration and Supported Languages**
+
+<img width="722" alt="AI Voice Translator" src="https://github.com/Dev-Godswill/picture-files/blob/main/2.png?raw=true">
+
+API keys for external services (AssemblyAI and ElevenLabs) are globally defined here, and a dictionary of supported languages is set up, mapping language names to their respective language codes.
 
 **Features:**
 1. **Real-time Date/Time:** The dashboard displays the current date and time, ensuring that the information is always up to date. 
